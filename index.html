@@ -1,30 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="stylesheet.css">
-        <title>Jaydey Luik</title>
-    </head>
-    <body>
-        <h1>Jaydey Luik</h1>
-        <div class="overmij">
-            <h3>Over Mij</h3>
-            <p>ik ben jaydey en ik ben 17 jaar oud en zit op het firda colege in emmeloord</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+    <title>Jaydey's portfolio</title>
+    <style>
+        section{
+            padding: 60px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-xxl">
+            <a href="#intro" class="navbar-brand">
+                <span class="fw-bold text-secondary">
+                    Jaydey's Portfolio
+                    <i class="bi bi-briefcase-fill"></i>
+                </span>
+            </a>
+            <!-- toggel button for mobile nav -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggel navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse justify-content-end align-center alig" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link">education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact me</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <span><h2>Mijn hobbies</h2></span>
-        <ul>
-            <li><a href="https://nl.wikipedia.org/wiki/Koken">Koken</a></li>
-            <li><a href="https://nl.wikipedia.org/wiki/Computerspel">Gamen</a></li>
-            <li><a href="https://nl.wikipedia.org/wiki/Muziek">Muziek Luisteren</a></li>
-        </ul>
-        <span><h2>Mijn favoriete series</h2></span>
-        <ol>
-            <li>arifureta</li>
-            <li>the raign of the seven spel blades</li>
-            <li>criminal minds</li>
-        </ol>
-        <span><h2>Logo</h2></span>
-        <img src="foto.png">
-    </body>
+    </nav>
+    <!-- intro -->
+    <section id="intro">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-center text-md-start">
+                    <h1>
+                        <div class="display-2">Hi my name is</div>
+                        <div class="display-5 text-muted">Jaydey</div>
+                    </h1>
+                    <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, doloribus!</p>
+                    <a href="#about" class="btn btn-secondary btn-lg">get to know me</a>
+                </div>
+                <div class="col-md-5 text-center d-none d-md-block">
+                    <img src="https://via.placeholder.com/300" alt="profile" class="img-fluid rounded-circle ">
+            </div>
+        </div>
+    </section>
+    <!-- about -->
+    <section id="about">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>About me</h2>
+                <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </div>
+            <div class="row my-5 align-items-center justify-content-center g-0">
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/500" alt="about" class="img-fluid">
+                </div>
+                <div class="col-md-6"><br>
+                    <h3>Who am I?</h3>
+                    <p class="text-muted">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae quam consequatur 
+                        voluptate non ab dicta in inventore tempora numquam, voluptatem perspiciatis ex 
+                        quas qui delectus eius sequi placeat ipsa nam dolores eaque possimus repellat 
+                        tenetur illo. Quasi aperiam voluptatum inventore nihil eius iure quos nostrum 
+                        quam facilis ipsum numquam, in maxime quo? Quidem corrupti, libero magnam 
+                        aspernatur deserunt itaque. Sapiente praesentium, adipisci quas obcaecati 
+                        autem, facilis iste fugiat hic quaerat quasi nam et sed labore recusandae 
+                        impedit magnam! Velit provident, a qui, repellendus vitae error aut autem 
+                        nihil aliquam at aperiam similique modi. Optio maiores aperiam numquam 
+                        amet magnam fugit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- My completed education -->
+    <section id="education">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>My education</h2>
+                <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio -->
+    <section id="portfolio">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Portfolio</h2>
+                <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </div>
+            <div class="row my-5 g-5 justify-content-around align-items-center">
+                <!-- Skill section for desktop -->
+                <div class="col-md-10 text-center d-none d-md-block">
+                    <!-- Skills Accordion -->
+                    <div class="accordion" id="chapters">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-html">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#html" aria-expanded="true" aria-controls="html">
+                                    HTML
+                                </button>
+                            </h2>
+                            <div id="html" class="accordion-collapse collapse" aria-labelledby="heading-html" data-bs-parent="#chapters">
+                                <div class="accordion-body">
+
+                                    
+                                    <div id="portfoliocarousel-html" class="carousel slide" data-bs-theme="dark">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#portfoliocarousel-html" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./assets/certificaten/HTML_certificaat.png" class="d-block w-100" alt="..." width="200px">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#portfoliocarousel-html" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="vissually-hidden text-dark">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#portfoliocarousel-html" data-bs-slide="next">
+                                            <span class="vissually-hidden text-dark">Next</span>
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-css">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#css" aria-expanded="true" aria-controls="css">
+                                    CSS
+                                </button>
+                            </h2>
+                            <div id="css" class="accordion-collapse collapse" aria-labelledby="heading-css" data-bs-parent="#chapters">
+                                <div class="accordion-body">
+                                    <div id="portfoliocarousel-css" class="carousel slide" data-bs-theme="dark">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#portfoliocarousel-css" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./assets/certificaten/introduction_to_CSS_certificaat.png" class="d-block w-100" alt="introduction to CSS certificate" width="200px">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#portfoliocarousel-css" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="vissually-hidden text-dark">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#portfoliocarousel-css" data-bs-slide="next">
+                                            <span class="vissually-hidden text-dark">Next</span>
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-python">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#python" aria-expanded="true" aria-controls="python">
+                                    Python
+                                </button>
+                            </h2>
+                            <div id="python" class="accordion-collapse collapse" aria-labelledby="heading-python" data-bs-parent="#chapters">
+                                <div class="accordion-body">
+                                    <div id="portfoliocarousel-python" class="carousel slide" data-bs-theme="dark">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#portfoliocarousel-python" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#portfoliocarousel-python" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#portfoliocarousel-python" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./assets/certificaten/introduction_to_Python_certificaat.png" class="d-block w-100" alt="introduction to Python certificate">
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <img src="./assets/certificaten/Python_intermediat_certificaat.png" class="d-block w-100" alt="Python intermediat certificate">
+                                            </div>
+                                            
+                                            <div class="carousel-item">
+                                                <img src="./assets/UmiShell.png" class="d-block w-100" alt="UmiShell">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5 class="text-light">UmiShell</h5>
+                                                    <p class="text-light">this is my own Custom windows 11 cmd Shell powered by Python</p>
+                                                    <a class="text-light text-decoration-none" href="https://github.com/kazuya-2006-26/UmiShell" target="_blank">click here to visit github repository</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#portfoliocarousel-python" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="vissually-hidden text-dark">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#portfoliocarousel-python" data-bs-slide="next">
+                                            <span class="vissually-hidden text-dark">Next</span>
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-js">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#js" aria-expanded="true" aria-controls="js">
+                                    JavaScript
+                                </button>
+                            </h2>
+                            <div id="js" class="accordion-collapse collapse" aria-labelledby="heading-js" data-bs-parent="#chapters">
+                                <div class="accordion-body">
+                                    <div id="portfoliocarousel-js" class="carousel slide" data-bs-theme="dark">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#portfoliocarousel-js" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <!-- carousel items -->
+                                            <div class="carousel-item active">
+                                                <img src="./assets/certificaten/introduction_to_JavaScript_certificaat.png" class="d-block w-100" alt="introduction to JavaScript certificate" width="200px">
+                                            </div>
+                                        </div>
+                                        <!-- next and previous buttons -->
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#portfoliocarousel-js" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="vissually-hidden text-dark">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#portfoliocarousel-js" data-bs-slide="next">
+                                            <span class="vissually-hidden text-dark">Next</span>
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-laravel">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#laravel" aria-expanded="true" aria-controls="laravel">
+                                    Laravel
+                                </button>
+                            </h2>
+                            <div id="laravel" class="accordion-collapse collapse" aria-labelledby="heading-laravel" data-bs-parent="#chapters">
+                                <div class="accordion-body">
+                                    <p class="text-">comming soon</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-php">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#php" aria-expanded="true" aria-controls="php">
+                                    PHP
+                                </button>
+                            </h2>
+                            <div id="php" class="accordion-collapse collapse" aria-labelledby="heading-php" data-bs-parent="#chapters">
+                                <div class="accordion-body">
+                                    <div id="portfoliocarousel-php" class="carousel slide" data-bs-theme="dark">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#portfoliocarousel-php" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./assets/certificaten/PHP_certificaat.png" class="d-block w-100" alt="PHP certificate" width="200px">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#portfoliocarousel-php" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="vissually-hidden text-dark">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#portfoliocarousel-php" data-bs-slide="next">
+                                            <span class="vissually-hidden text-dark">Next</span>
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-sql">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#sql" aria-expanded="true" aria-controls="sql">
+                                    SQL
+                                </button>
+                            </h2>
+                            <div id="sql" class="accordion-collapse collapse" aria-labelledby="heading-sql" data-bs-parent="#chapters">
+                                <div class="accordion-body">
+                                    <div id="portfoliocarousel-sql" class="carousel slide" data-bs-theme="dark">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#portfoliocarousel-sql" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#portfoliocarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./assets/certificaten/introduction_to_SQL_certificaat.png" class="d-block w-100" alt="introduction to SQL certificate" width="200px">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./assets/certificaten/SQL_intermediat_certificaat.png" class="d-block w-100" alt="SQL intermediat certificate">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#portfoliocarousel-sql" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="vissually-hidden text-dark">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#portfoliocarousel-sql" data-bs-slide="next">
+                                            <span class="vissually-hidden text-dark">Next</span>
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-java">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#java" aria-expanded="true" aria-controls="java">
+                                    Java
+                                </button>
+                            </h2>
+                            <div id="java" class="accordion-collapse collapse" aria-labelledby="heading-java" data-bs-parent="#chapters">
+                                <div class="accordion-body">
+                                    <p class="text-">comming soon</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-10 text-center d-block d-md-none">
+                    <p>
+                        For an optimal viewing experience of certificates and projects, 
+                        we recommend accessing our website using an iPad or a larger screen. 
+                        If you wish to view certificates on a phone, you can conveniently access 
+                        my SoloLearn profile by clicking <a href="https://www.sololearn.com/en/profile/27163728" target="_blank">here</a>."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Contact me</h2>
+                <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </div>
+            <div class="row my-5 align-items-center justify-content-center g-0">
+                <div class="col-md-10 text-center">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Email: <a href="mailto:jaydey.luik@hotmail.com">jaydey.luik@hotmail.com</a></li>
+                        <li class="list-group-item">LinkedIn: <a href="https://www.linkedin.com/in/jaydey-luik-7929b8290/" target="_blank">Jaydey Luik</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
 </html>
