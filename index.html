@@ -11,6 +11,37 @@
         section{
             padding: 60px 0;
         }
+
+        .list-wrapper ul {
+            text-align: left; /* Zorgt ervoor dat de tekst links uitgelijnd blijft */
+        }
+
+        @media (max-width: 991.98px) {
+            .navbar-nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
+        @media (max-width: 768px) { /* Pas dit toe voor mobiele apparaten */
+            .custom-nav{
+                border-bottom: solid 0.3px rgba(176, 176, 176, 0.6);
+            }
+            
+            .custom-nav .nav-item {
+                text-align: right;
+            }
+            
+            .list-wrapper {
+                display: block;
+            }
+
+            .list-wrapper ul {
+                display: inline-block; /* Maakt de ul een inline-block zodat het kan centreren */
+                text-align: left; /* Behoudt tekst links uitgelijnd */
+            }
+        }
     </style>
 </head>
 <body>
@@ -28,19 +59,19 @@
             </button>
 
             <!-- navbar links -->
-            <div class="collapse navbar-collapse justify-content-end align-center alig" id="main-nav">
+            <div class="collapse navbar-collapse justify-content-end" id="main-nav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">Over mij</a>
+                        <a href="#about" class="nav-link custom-nav">Over mij</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#education" class="nav-link">Oplijdingen</a>
+                        <a href="#education" class="nav-link custom-nav">Oplijdingen</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                        <a href="#portfolio" class="nav-link custom-nav">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
+                        <a href="#contact" class="nav-link custom-nav">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -52,11 +83,11 @@
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-5 text-center text-md-start">
                     <h1>
-                        <div class="display-2">Hi mijn naam is</div>
+                        <div class="display-2">Mijn naam is</div>
                         <div class="display-5 text-muted">Jaydey</div>
                     </h1>
                     <p class="lead my-4 text-muted">
-                        ik ben een hardwerkende student in mijn eerste jaar van de opleiding software development.
+                        Ik ben een hardwerkende student in mijn eerste jaar van de opleiding software development.
                         Ik zou graag meer praktische ervaring willen opdoen om nieuwe vaardigheden te verwerven,
                         daarom ben ik op zoek naar een baan in deze sector.
                     </p>
@@ -75,12 +106,12 @@
                 <p class="lead text-muted">Hier kunt u mij beter leren kennen</p>
             </div>
             <div class="row my-5 align-items-center justify-content-center g-0">
-                <div class="col-md-5">
+                <div class="col-md-5 text-center text-md-start">
                     <img src="/assets/over-mij.jpg" alt="about" style="max-width: 70%;" class="img-fluid">
                 </div>
                 <div class="col-md-7"><br>
-                    <h3>Wie ben ik?</h3>
-                    <p class="text-muted">
+                    <h3 class="text-center text-md-start">Wie ben ik?</h3>
+                    <p class="text-muted text-center text-md-start">
                         Welkom op mijn portfolio! Mijn naam is Jaydey, 
                         een enthousiaste 17-jarige student aan het Firda 
                         College in Emmeloord, waar ik Software Development 
@@ -120,6 +151,7 @@
             </div>
         </div>
     </section>
+
     <!-- My completed education -->
     <section id="education">
         <div class="container-lg">
@@ -129,33 +161,40 @@
             </div>
             <div class="row my-5 align-items-center justify-content-center g-0">
                 <div class="col-md-6">
-                    <h3>Volgend:</h3>
-                    <p>Momenteel volg ik de opleiding Software Development aan het MBO-College Firda Emeloord. In mijn vrije tijd volg ik cursussen op SoloLearn.</p>
-                    <ul>
-                        <li>Firda College - Software Development niveau 4</li>
-                        <li>SoloLearn - JavaScript Intermediate</li>
-                        <li>SoloLearn - Coding Foundations</li>
-                        <li>SoloLearn - Python Developer</li>
-                        <li>SoloLearn - Introduction to C</li>
-                        <li>SoloLearn - C# Intermediate</li>
-                        <li>SoloLearn - Generative AI in Practice</li>
-                    </ul>
+                    <h3 class="text-center text-md-start">Volgend</h3>
+                    <p class="text-center text-md-start">Momenteel volg ik de opleiding Software Development aan het MBO-College Firda Emeloord. In mijn vrije tijd volg ik cursussen op SoloLearn.</p>
+                    <div class="list-wrapper">
+                        <ul>
+                            <li>Firda College - Software Development niv 4</li>
+                            <li>SoloLearn - JavaScript Intermediate</li>
+                            <li>SoloLearn - Coding Foundations</li>
+                            <li>SoloLearn - Python Developer</li>
+                            <li>SoloLearn - Introduction to C</li>
+                            <li>SoloLearn - C# Intermediate</li>
+                            <li>SoloLearn - Generative AI in Practice</li>
+                        </ul>
+                    </div>
+                    
 
-                    <h3>Afgerond</h3>
-                    <ul>
-                        <li>VMBO TL-economie, groen, zorg & welzijn</li>
-                        <li><a class="text-decoration-none text-reset" href="#portfolio">sololearn-cursus HTML</a></li>
-                        <li><a class="text-decoration-none text-reset" href="#portfolio">sololearn-cursus Introduction to CSS</a></li>
-                        <li><a class="text-decoration-none text-reset" href="#portfolio">sololearn-cursus Introduction to JavaScript</a></li>
-                        <li><a class="text-decoration-none text-reset" href="#portfolio">sololearn-cursus PHP</a></li>
-                        <li><a class="text-decoration-none text-reset" href="#portfolio">sololearn-cursus Introduction to Python</a></li>
-                        <li><a class="text-decoration-none text-reset" href="#portfolio">sololearn-cursus Python Intermediate</a></li>
-                        <li><a class="text-decoration-none text-reset" href="#portfolio">sololearn-cursus Introduction to SQL</a></li>
-                        <li><a class="text-decoration-none text-reset" href="#portfolio">sololearn-cursus SQL Intermediate</a></li>
-                        <li><a class="text-decoration-none text-reset" href="#portfolio">sololearn-cursus Introduction to Java</a></li>
-                        <li><a class="text-decoration-none text-reset" href="#portfolio"></a>SoloLearn - Introduction to C#</a></li>
-                        <li><a class="text-decoration-none text-reset" href="#portfolio"></a>SoloLearn - Coding for Data</a></li>
-                    </ul>
+                    <h3 class="text-center text-md-start">Afgerond</h3>
+                    
+                    <div class="list-wrapper">
+                        <ul>
+                            <li>VMBO TL-economie, groen, zorg & welzijn</li>
+                            <li><a class="text-decoration-none text-reset" href="#portfolio">sololearn-cursus HTML</a></li>
+                            <li><a class="text-decoration-none text-reset" href="#portfolio">sololearn-cursus Introduction to CSS</a></li>
+                            <li><a class="text-decoration-none text-reset" href="#portfolio">sololearn-cursus Introduction to JavaScript</a></li>
+                            <li><a class="text-decoration-none text-reset" href="#portfolio">sololearn-cursus PHP</a></li>
+                            <li><a class="text-decoration-none text-reset" href="#portfolio">sololearn-cursus Introduction to Python</a></li>
+                            <li><a class="text-decoration-none text-reset" href="#portfolio">sololearn-cursus Python Intermediate</a></li>
+                            <li><a class="text-decoration-none text-reset" href="#portfolio">sololearn-cursus Introduction to SQL</a></li>
+                            <li><a class="text-decoration-none text-reset" href="#portfolio">sololearn-cursus SQL Intermediate</a></li>
+                            <li><a class="text-decoration-none text-reset" href="#portfolio">sololearn-cursus Introduction to Java</a></li>
+                            <li><a class="text-decoration-none text-reset" href="#portfolio"></a>SoloLearn - Introduction to C#</a></li>
+                            <li><a class="text-decoration-none text-reset" href="#portfolio"></a>SoloLearn - Coding for Data</a></li>
+                        </ul>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -520,255 +559,82 @@
             <div class="col-md-12">
                 <h3 class="text-center">Certificaten</h3>
                 <ul class="list-group">
-                    <li class="list-group-item">
+                    <li class="list-group-item text-center">
                         HTML
-                        <img src="/assets/certificaten/HTML_certificaat.png" class="d-block w-50" alt="html certificaat">
+                        <img src="/assets/certificaten/HTML_certificaat.png" class="d-block w-50 m-auto img-enlargeable" alt="html certificaat" data-bs-toggle="modal" data-bs-target="#imageModal">
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item text-center">
                         CSS
-                        <img src="/assets/certificaten/introduction_to_CSS_certificaat.png" class="d-block w-50" alt="css certificaat">
+                        <img src="/assets/certificaten/introduction_to_CSS_certificaat.png" class="d-block w-50 m-auto img-enlargeable" alt="css certificaat" data-bs-toggle="modal" data-bs-target="#imageModal">
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item text-center">
                         Python
-                        <img src="/assets/certificaten/introduction_to_Python_certificaat.png" class="d-block w-50" alt="Introduction to python certificaat">
-                        <img src="/assets/certificaten/Python_intermediat_certificaat.png" class="d-block w-50" alt="python intermediat certificaat">
+                        <img src="/assets/certificaten/introduction_to_Python_certificaat.png" class="d-block w-50 m-auto img-enlargeable" alt="Introduction to python certificaat" data-bs-toggle="modal" data-bs-target="#imageModal">
+                        <img src="/assets/certificaten/Python_intermediat_certificaat.png" class="d-block w-50 m-auto img-enlargeable" alt="python intermediat certificaat" data-bs-toggle="modal" data-bs-target="#imageModal">
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item text-center">
                         JavaScript
-                        <img src="/assets/certificaten/introduction_to_JavaScript_certificaat.png" class="d-block w-50" alt="javascript certificaat">
+                        <img src="/assets/certificaten/introduction_to_JavaScript_certificaat.png" class="d-block w-50 m-auto img-enlargeable" alt="javascript certificaat" data-bs-toggle="modal" data-bs-target="#imageModal">
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item text-center">
                         PHP
-                        <img src="/assets/certificaten/PHP_certificaat.png" class="d-block w-50" alt="php certificaat">
+                        <img src="/assets/certificaten/PHP_certificaat.png" class="d-block w-50 m-auto img-enlargeable" alt="php certificaat" data-bs-toggle="modal" data-bs-target="#imageModal">
                     </li>
-                    <li class="list-group-item">
-                        SQL
-                        <img src="/assets/certificaten/introduction_to_SQL_certificaat.png" class="d-block w-50" alt="introduction to SQL certificaat">
-                        <img src="./assets/certificaten/SQL_intermediat_certificaat.png" class="d-block w-50" alt="SQL Intermediate certificaat">
+                    <li class="list-group-item text-center">
+                        SQL and Data Analysis
+                        <img src="/assets/certificaten/introduction_to_SQL_certificaat.png" class="d-block w-50 m-auto img-enlargeable" alt="introduction to SQL certificaat" data-bs-toggle="modal" data-bs-target="#imageModal">
+                        <img src="/assets/certificaten/SQL_intermediat_certificaat.png" class="d-block w-50 m-auto img-enlargeable" alt="SQL Intermediate certificaat" data-bs-toggle="modal" data-bs-target="#imageModal">
+                        <img src="/assets/certificaten/Coding_for_Data_certificaat.jpg" class="d-block w-50 m-auto img-enlargeable" alt="Coding for Data certificaat" data-bs-toggle="modal" data-bs-target="#imageModal">
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item text-center">
                         Java
-                        <img src="/assets/certificaten/Introduction_to_java_certificaat.jpg" class="d-block w-50" alt="introduction to Java certificaat">
+                        <img src="/assets/certificaten/Introduction_to_java_certificaat.jpg" class="d-block w-50 m-auto img-enlargeable" alt="introduction to Java certificaat" data-bs-toggle="modal" data-bs-target="#imageModal">
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item text-center">
                         C#
-                        <img src="./assets/certificaten/Introduction_to_CSharp_certificaat.jpg" class="d-block w-50" alt="introduction to C# certificaat">
+                        <img src="/assets/certificaten/Introduction_to_CSharp_certificaat.jpg" class="d-block w-50 m-auto img-enlargeable" alt="introduction to C# certificaat" data-bs-toggle="modal" data-bs-target="#imageModal">
                     </li>
                 </ul>
 
 
 
                 <h5 class="lead mt-3">Om mijn certificaten beter te bekijken kunt ook op deze knop kliken om naar mijn SoloLearn profiel te gaan</h5>
-                <div class="btn-group" role="group" aria-label="mobile-portfolio-button-group">
-                    <a href="https://www.sololearn.com/en/profile/27163728" target="_blank" class="btn btn-secondary">SoloLearn Profiel</a>
-                    <div class="dropdown">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        certificaten
-                        </a>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#portfolio-modal-html">HTML</a></li>
-                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#portfolio-modal-css">Introduction to CSS</a></li>
-                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#portfolio-modal-intro-python">Introduction to Python</a></li>
-                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#portfolio-modal-python-inter">Python intermediat</a></li>
-                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#portfolio-modal-intro-js">Introduction to JavaScript</a></li>
-                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#portfolio-modal-php">PHP</a></li>
-                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#portfolio-modal-intro-sql">introduction to SQL</a></li>
-                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#portfolio-modal-sql-inter">SQL intermediat</a></li>
-                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#portfolio-modal-intro-java">Introduction to Java</a></li>
-                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#portfolio-modal-intro-c-sharp">Introduction to C#</a></li>
-                        </ul>
-                    </div>
-                </div>
+                <a href="https://www.sololearn.com/en/profile/27163728" target="_blank" class="btn btn-secondary me-3">SoloLearn Profiel</a>
             </div>
             <div class="col-md-12 mt-3">
                 <h5 class="lead">Om mijn openbare projecten te zien kunt op de knop hier onder kliken</h5>
-                <a href="https://github.com/kazuya-2006-26?tab=repositories&q=&type=public&language=&sort=" class="btn btn-secondary btn-lg" target="_blank">Mijn projecten</a>
+                <a href="https://github.com/kazuya-2006-26?tab=repositories&q=&type=public&language=&sort=" class="btn btn-secondary" target="_blank">Mijn projecten</a>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Mobile Portfolio modals -->
-<!-- HTML Modal -->
-<div class="modal fade" id="portfolio-modal-html" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="portfolio-modal-html-Label" aria-hidden="true">
-    <div class="modal-dialog">
+<!-- Mobile Portfolio modal and script -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="portfolio-modal-html-Label">HTML certificaat</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
         <div class="modal-body">
-          <img src="/assets/certificaten/HTML_certificaat.png" style="max-width: 100%;" class="d-block" alt="html certificaat">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-</div>
-
-<!-- CSS Modal -->
-<div class="modal fade" id="portfolio-modal-css" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="portfolio-modal-css-Label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="portfolio-modal-css-Label">CSS certificaat</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="/assets/certificaten/introduction_to_CSS_certificaat.png" style="max-width: 100%;" class="d-block" alt="css certificaat">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-</div>
-
-<!-- intro to python Modal -->
-<div class="modal fade" id="portfolio-modal-intro-python" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="portfolio-modal-intro-python-Label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="portfolio-modal-intro-python-Label">Introduction to Python certificaat</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="/assets/certificaten/introduction_to_Python_certificaat.png" style="max-width: 100%;" class="d-block" alt="introduction to python certificaat">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-</div>
-
-
-<!-- python inter Modal -->
-<div class="modal fade" id="portfolio-modal-python-inter" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="portfolio-modal-python-inter-Label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="portfolio-modal-python-inter-Label">Python Intermediate certificaat</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="/assets/certificaten/Python_intermediat_certificaat.png" style="max-width: 100%;" class="d-block" alt="python intermediat certificaat">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-</div>
-
-<!-- intro to js Modal -->
-<div class="modal fade" id="portfolio-modal-intro-js" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="portfolio-modal-intro-js-Label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="portfolio-modal-intro-js-Label">JavaScript certificaat</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="/assets/certificaten/introduction_to_JavaScript_certificaat.png" style="max-width: 100%;" class="d-block" alt="javascript certificaat">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <img src="" id="modalImage" class="w-100">
         </div>
       </div>
     </div>
   </div>
 
-<!-- PHP Modal -->
-<div class="modal fade" id="portfolio-modal-php" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="portfolio-modal-php-Label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="portfolio-modal-php-Label">PHP certificaat</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="/assets/certificaten/PHP_certificaat.png" style="max-width: 100%;" class="d-block" alt="php certificaat">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-</div>
+<script defer>
 
-<!-- intro to sql Modal -->
-<div class="modal fade" id="portfolio-modal-intro-sql" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="portfolio-modal-intro-sql-Label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="portfolio-modal-intro-sql-Label">Introduction to SQL certificaat</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="/assets/certificaten/introduction_to_SQL_certificaat.png" style="max-width: 100%;" class="d-block" alt="introduction to sql certificaat">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-</div>
-  
-<!-- sql inter Modal -->
-<div class="modal fade" id="portfolio-modal-sql-inter" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="portfolio-modal-sql-inter-Label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="portfolio-modal-sql-inter-Label">SQL Intermediate certificaat</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="/assets/certificaten/SQL_intermediat_certificaat.png" style="max-width: 100%;" class="d-block" alt="sql intermediat certificaat">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-</div>
+    document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll('.img-enlargeable');
+    let modalImage = document.getElementById('modalImage');
 
-<!-- intro to java Modal -->
-<div class="modal fade" id="portfolio-modal-intro-java" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="portfolio-modal-intro-java-Label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="portfolio-modal-intro-java-Label">Introduction to Java certificaat</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="/assets/certificaten/Introduction_to_java_certificaat.jpg" style="max-width: 100%;" class="d-block" alt="introduction to java certificaat">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-</div>
+    images.forEach(function(img) {
+        img.addEventListener('click', function() {
+        modalImage.src = this.src; // Set the src of the modal image to the src of the clicked image
+        });
+    });
+    });
 
-<!-- intro to java Modal -->
-<div class="modal fade" id="portfolio-modal-intro-c-sharp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="portfolio-modal-intro-c#-Label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="portfolio-modal-intro-c-sharp-Label">Introduction to Java certificaat</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="./assets/certificaten/Introduction_to_CSharp_certificaat.jpg" style="max-width: 100%;" class="d-block" alt="introduction to C# certificaat">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-</div>
+</script>
+
 
 </body>
 </html>
