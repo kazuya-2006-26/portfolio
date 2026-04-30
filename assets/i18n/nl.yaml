@@ -1,0 +1,51 @@
+nav:
+    home: Home
+    about: Over Mij
+    projects: Projecten
+    contact: Contact
+
+hero:
+    title: Hoi, ik ben Jaydey
+    subTitle: Developer & Creator
+
+about:
+  title: Over Mij
+  text: Ik ben een ontwikkelaar die graag schone, functionele software bouwt.
+  text2: Ik richt me op eenvoud, prestaties en het creëren van gebruikservaringen die doordacht en verfijnd aanvoelen.
+
+lang:
+    title: Talen
+    english: Engels
+    dutch: Nederlands
+    japanese: Japans
+    lvl:
+        native: Moedertaal
+        fluent: Vloeiend
+        advanced: Gevorderd
+        intermediate: Gemiddeld
+        beginner: Basis
+        learning: In opleiding
+        
+
+skills:
+    title: Vaardigheden
+    rust: Rust
+    js: JavaScript
+    web: HTML/CSS
+
+projects:
+    title: Projecten
+    filters:
+        all: Alles
+        rust: Rust
+        web: Web
+        tools: Tools
+    modal:
+        github: Bekijk op Github
+
+contact:
+    title: Neem Contact Op
+    email: E-mail
+    cv:
+        title: CV
+        download: Download CV

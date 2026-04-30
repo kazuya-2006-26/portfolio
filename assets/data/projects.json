@@ -1,0 +1,36 @@
+[
+    {
+        "title": {
+            "en": "My Rust Audio Player",
+            "nl": "Mijn Rust Audio Speler"
+        },
+        "description": {
+            "en": "A modular Rust desktop audio player using egui and rodio.",
+            "nl": "Een modulaire Rust desktop audiospeler met egui en rodio."
+        },
+        "tags": {
+            "en": ["Rust", "Audio", "Desktop"],
+            "nl": ["Rust", "Audio", "Desktop"]
+        },
+        "category": "rust",
+        "featured": true,
+        "link": "https://github.com/yourrepo"
+    },
+    {
+        "title": {
+            "en": "Voice Engine",
+            "nl": "Voice Engine"
+        },
+        "description": {
+            "en": "A custom voice synthesis engine with formants and presets.",
+            "nl": "Een aangepaste stem synthesizer met formanten en presets."
+        },
+        "tags": {
+            "en": ["Voice", "Synthesis", "Audio"],
+            "nl": ["Stem", "Synthese", "Audio"]
+        },
+        "category": "rust",
+        "featured": false,
+        "link": "https://github.com/yourrepo"
+    }
+]

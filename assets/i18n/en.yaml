@@ -1,0 +1,50 @@
+nav:
+    home: Home
+    about: About
+    projects: Projects
+    contact: Contact
+
+hero:
+    title: Hi, I'm Jaydey
+    subTitle: Developer & Creator
+    
+about:
+    title: About Me
+    text: I am a developer who loves building clean, functional software.
+    text2: I focus on simplicity, performance, and creating user experiences that feel intentional and polished.
+
+lang:
+    title: Languages
+    english: English
+    dutch: Dutch
+    japanese: Japanese
+    lvl:
+        native: Native
+        fluent: Fluent
+        advanced: Advanced
+        intermediate: Intermediate
+        beginner: Beginner
+        learning: Learning
+
+skills:
+    title: Skills
+    rust: Rust
+    js: JavaScript
+    web: HTML/CSS
+
+projects:
+    title: Projects
+    filters:
+        all: All
+        rust: Rust
+        web: Web
+        tools: Tools
+    modal:
+        github: View on Github
+
+contact:
+    title: Contact Me
+    email: Email
+    cv:
+        title: CV
+        download: Download CV
