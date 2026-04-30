@@ -1,5 +1,5 @@
 async function loadLanguage(lang) {
-    const response = await fetch(`/assets/i18n/${lang}.yaml`);
+    const response = await fetch(`assets/i18n/${lang}.yaml`);
     const yamlText = await response.text();
     const parsed = jsyaml.load(yamlText);
 
