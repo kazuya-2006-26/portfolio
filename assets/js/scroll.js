@@ -19,8 +19,12 @@ function updateActiveNav() {
 
     while(--index && window.scrollY + 200 < sections[index].offsetTop) {}
 
-    navItems.forEach(li => li.classList.remove("active"));
-    navItems[index].classList.add("active");
+    navItems.forEach(item => {
+        if (item) item.classList.remove("active");
+    });
+    if (navItems[index]) {
+        navItems[index].classList.add("active");
+    }
 }
 
 window.addEventListener("scroll", updateActiveNav);

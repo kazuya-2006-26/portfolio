@@ -84,11 +84,48 @@
     </section>
 
     <section class="skills fade-in">
-        <h2 data-i18n="skills.title"></h2>
+        <h2>
+            <span data-i18n="skills.title"></span>
+            <span class="rating-info">
+                <span class="info-icon">i</span>
+                <div class="tooltip">
+                    <strong>Skill Rating Scale (0–100)</strong><br><br>
+
+                    <strong>0–20 — Beginner</strong><br>
+                    Understands basic concepts but requires guidance.<br><br>
+
+                    <strong>20–40 — Early Intermediate</strong><br>
+                    Can perform simple tasks with some support; still learning fundamentals.<br><br>
+
+                    <strong>40–60 — Intermediate</strong><br>
+                    Comfortable with common tasks and problem‑solving; can work independently on routine work.<br><br>
+
+                    <strong>60–75 — Advanced</strong><br>
+                    Can work independently on complex tasks; understands deeper patterns and best practices.<br><br>
+
+                    <strong>75–90 — Expert</strong><br>
+                    Deep understanding; can optimize, debug, and improve systems; mentors others.<br><br>
+
+                    <strong>90–100 — Specialist</strong><br>
+                    Top-tier mastery; capable of designing entire systems, architectures, or frameworks.
+                </div>
+            </span>
+        </h2>
         <div class="skills-list">
-            <div class="skill"><span data-i18n="skills.rust"></span><div class="bar"><div style="width: 90%"></div></div></div>
-            <div class="skill"><span data-i18n="skills.js"></span><div class="bar"><div style="width: 70%"></div></div></div>
-            <div class="skill"><span data-i18n="skills.web"></span><div class="bar"><div style="width: 80%"></div></div></div>
+            <div class="skill"><span class="skill-label" data-name="Web Development" data-score="60" data-i18n="skills.web"></span><div class="bar"><div style="width: 60%"></div></div></div>
+            <div class="skill"><span class="skill-label" data-name="JavaScript" data-score="50" data-i18n="skills.js"></span><div class="bar"><div style="width: 50%"></div></div></div>
+            <div class="skill"><span class="skill-label" data-name="PHP" data-score="40" data-i18n="skills.php"></span><div class="bar"><div style="width: 40%"></div></div></div>
+            <div class="skill"><span class="skill-label" data-name="Python" data-score="70" data-i18n="skills.py"></span><div class="bar"><div style="width: 70%"></div></div></div>
+            <div class="skill"><span class="skill-label" data-name="Android" data-score="40" data-i18n="skills.android"></span><div class="bar"><div style="width: 40%"></div></div></div>
+            <div class="skill"><span class="skill-label" data-name="SQL" data-score="40" data-i18n="skills.SQL"></span><div class="bar"><div style="width: 40%"></div></div></div>
+            <div class="skill"><span class="skill-label" data-name="C#" data-score="50" data-i18n="skills.C#"></span><div class="bar"><div style="width: 50%"></div></div></div>
+            <div class="skill"><span class="skill-label" data-name="C++" data-score="35" data-i18n="skills.C++"></span><div class="bar"><div style="width: 35%"></div></div></div>
+            <div class="skill"><span class="skill-label" data-name="Arduino" data-score="60" data-i18n="skills.arduino"></span><div class="bar"><div style="width: 60%"></div></div></div>
+            <div class="skill"><span class="skill-label" data-name="Java" data-score="60" data-i18n="skills.java"></span><div class="bar"><div style="width: 60%"></div></div></div>
+            <div class="skill"><span class="skill-label" data-name="Lua" data-score="45" data-i18n="skills.lua"></span><div class="bar"><div style="width: 45%"></div></div></div>
+            <div class="skill"><span class="skill-label" data-name="Rust" data-score="65" data-i18n="skills.rust"></span><div class="bar"><div style="width: 65%"></div></div></div>
+            <div class="skill"><span class="skill-label" data-name="Kotlin" data-score="75" data-i18n="skills.kotlin"></span><div class="bar"><div style="width: 75%"></div></div></div>
+            <div class="skill"><span class="skill-label" data-name="TypeScript" data-score="55" data-i18n="skills.typescript"></span><div class="bar"><div style="width: 55%"></div></div></div>
         </div>
     </section>
 
@@ -111,7 +148,7 @@
         <div class="contact-grid">
             <div class="contact-item">
                 <h3 data-i18n="contact.email"></h3>
-                <a href="mailto:you@example.com" class="contact-link">you@example.com</a>
+                <a href="mailto:jaydey.luik@hotmail.com" class="contact-link">jaydey.luik@hotmail.com</a>
             </div>
 
             <div class="contact-item">
@@ -124,13 +161,13 @@
     
     <footer>
         <div class="social-bar">
-            <a href="https://github.com/yourprofile" target="_blank">
+            <a href="https://github.com/kazuya-2006-26" target="_blank">
                 <img class="icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg">
             </a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">
+            <a href="https://www.linkedin.com/in/jaydey-luik-7929b8290/" target="_blank">
                 <img class="icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg">
             </a>
-            <a href="mailto:you@example.com">
+            <a href="mailto:jaydey.luik@hotmail.com">
                 <img class="icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/maildotru.svg">
             </a>
         </div>
@@ -146,6 +183,8 @@
             <a id="modalLink" href="#" target="_blank" data-i18n="projects.modal.github"></a>
         </div>
     </div>
+
+    <div id="skillTooltip"></div>
 
 </body>
 </html>

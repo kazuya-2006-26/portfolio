@@ -28,9 +28,21 @@ lang:
 
 skills:
     title: Skills
-    rust: Rust
-    js: JavaScript
     web: HTML/CSS
+    js: JavaScript
+    php: PHP
+    py: Python
+    android: Android
+    SQL: SQL
+    C#: C#
+    C: C
+    C++: C++
+    arduino: Arduino
+    java: Java
+    lua: Lua
+    rust: Rust
+    kotlin: Kotlin
+    typescript: TypeScript
 
 projects:
     title: Projects
@@ -47,4 +59,4 @@ contact:
     email: Email
     cv:
         title: CV
-        download: Download CV
+        download: Download CV (WIP)
