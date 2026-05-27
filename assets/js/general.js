@@ -15,25 +15,36 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    function getSkillLevel(score) {
-        score = Number(score);
+    function getSFIALevel(level) {
+        const map = {
+            1: "Follow",
+            2: "Assist",
+            3: "Apply",
+            4: "Enable",
+            5: "Ensure/Advise",
+            6: "Initiate/Influence",
+            7: "Set Strategy"
+        };
+        return map[level] || "Unknown";
+    }
 
-        if (score < 20) return "Beginner";
-        if (score < 40) return "Early Intermediate";
-        if (score < 60) return "Intermediate";
-        if (score < 75) return "Advanced";
-        if (score < 90) return "Expert";
-        return "Specialist";
+    function sfiaToWidth(level) {
+        return (Number(level) / 7) * 100;
     }
 
 
-    document.querySelectorAll(".skill").forEach(skill => {
-        skill.addEventListener("mousemove", e => {
-            const label = skill.querySelector(".skill-label");
-            const name = label.dataset.name;
-            const score = label.dataset.score;
 
-            tooltip.textContent = `${name} — ${score}% (${getSkillLevel(score)})`;
+    document.querySelectorAll(".skill").forEach(skill => {
+        const label = skill.querySelector(".skill-label");
+        const sfia = label.dataset.sfia;
+        const bar = skill.querySelector(".bar div");
+
+        bar.style.width = sfiaToWidth(sfia) + "%";
+
+        skill.addEventListener("mousemove", e => {
+            const name = label.dataset.name;
+
+            tooltip.textContent = `${name} — SFIA Level ${sfia} (${getSFIALevel(sfia)})`;
             tooltip.style.left = e.pageX + 12 + "px";
             tooltip.style.top = e.pageY + 12 + "px";
             tooltip.style.opacity = 1;

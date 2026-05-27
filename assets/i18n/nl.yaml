@@ -9,10 +9,9 @@ hero:
     subTitle: Developer & Creator
 
 about:
-  title: Over Mij
-  text: Ik ben een ontwikkelaar die graag schone, functionele software bouwt.
-  text2: Ik richt me op eenvoud, prestaties en het creëren van gebruikservaringen die doordacht en verfijnd aanvoelen.
-
+    title: Over Mij
+    text: Ik ben Jaydey — een nieuwsgierige en gestructureerde ontwikkelaar die snel leert wanneer een onderwerp me echt interesseert. Mijn interesse voor programmeren begon op de basisschool met Scratch en groeide tijdens het VMBO uit tot het bouwen van websites en Discord‑bots. Uiteindelijk koos ik voor softwareontwikkeling als vervolgopleiding. Tijdens mijn stages bij de gemeente Urk en Quotec ontdekte ik mijn liefde voor embedded en low‑level software, binair en hexadecimaal werken, en het ontwerpen van modulaire, uitbreidbare systemen.
+    text2: Buiten het programmeren ben ik een rustig en introvert persoon die houdt van koken, anime, gamen, muziek, D&D, hardware‑tinkering en wandelen in het bos. Ik geniet van projecten waarbij ik kan uitzoeken hoe dingen écht werken. In mijn droombaan kan ik mijn vaardigheden in zetten voor oplossingen die bijdragen aan grote uitdagingen zoals voedseltekorten, personeelstekorten en klimaatproblemen of machines die het werk efficiënter maken. Ik wil software bouwen die ertoe doet — logisch, modulair en met impact.
 lang:
     title: Talen
     english: Engels
@@ -28,21 +27,28 @@ lang:
 
 skills:
     title: Vaardigheden
-    web: HTML/CSS
-    js: JavaScript
-    php: PHP
-    py: Python
-    android: Android
-    SQL: SQL
-    C#: C#
-    C: C
-    C++: C++
-    arduino: Arduino
-    java: Java
-    lua: Lua
-    rust: Rust
-    kotlin: Kotlin
-    typescript: TypeScript
+    languages:
+        web: HTML/CSS
+        js: JavaScript
+        typescript: TypeScript
+        php: PHP
+        py: Python
+        SQL: SQL
+        C#: C#
+        arduino: Arduino
+        java: Java
+        rust: Rust
+        kotlin: Kotlin
+    tooltip:
+        header: Vaardigheden beoordeeld volgens SFIA
+        lvl1: Werkt onder nauw toezicht; leert basistaken.
+        lvl2: Schrijft eenvoudige code; volgt vastgestelde procedures.
+        lvl3: Schrijft werkende code met beperkte begeleiding; lost routinematige problemen op.
+        lvl4: Ontwerpt componenten; werkt zelfstandig; draagt​​bij aan architectuurdiscussies.
+        lvl5: Geeft leiding aan de ontwikkeling; stelt normen vast; begeleidt anderen.
+        lvl6: Bepaalt de technische strategie; leidt grote systemen.
+        lvl7: Leiderschap op sectorniveau; bepaalt de richting van de organisatie.
+        
 
 projects:
     title: Projecten
@@ -51,6 +57,7 @@ projects:
         rust: Rust
         web: Web
         tools: Tools
+        embedded: Embedded
     modal:
         github: Bekijk op Github
 

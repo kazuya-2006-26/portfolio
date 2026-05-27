@@ -10,8 +10,8 @@ hero:
     
 about:
     title: About Me
-    text: I am a developer who loves building clean, functional software.
-    text2: I focus on simplicity, performance, and creating user experiences that feel intentional and polished.
+    text: I’m Jaydey — a curious and structured developer who learns quickly when a topic genuinely interests me. My interest in programming began in primary school with Scratch and grew during VMBO, where I built websites and Discord bots. Eventually, I chose software development as my study path. During my internships at the municipality of Urk and at Quotec, I discovered my love for embedded and low‑level software, working with binary and hexadecimal, and designing modular, expandable systems.
+    text2: Outside of programming, I’m a quiet and introverted person who enjoys cooking, anime, gaming, music, D&D, hardware tinkering, and walking in the forest. I love projects where I can figure out how things really work. In my ideal job, I want to use my skills to contribute to solutions for major challenges like food shortages, worker shortages, climate issues, or machines that make work more efficient. I want to build software that matters — logical, modular, and impactful.
 
 lang:
     title: Languages
@@ -28,21 +28,28 @@ lang:
 
 skills:
     title: Skills
-    web: HTML/CSS
-    js: JavaScript
-    php: PHP
-    py: Python
-    android: Android
-    SQL: SQL
-    C#: C#
-    C: C
-    C++: C++
-    arduino: Arduino
-    java: Java
-    lua: Lua
-    rust: Rust
-    kotlin: Kotlin
-    typescript: TypeScript
+    languages:
+        web: HTML/CSS
+        js: JavaScript
+        typescript: TypeScript
+        php: PHP
+        py: Python
+        SQL: SQL
+        C#: C#
+        arduino: Arduino
+        java: Java
+        rust: Rust
+        kotlin: Kotlin
+    tooltip:
+        header: Skills Rated according to SFIA
+        lvl1: Works under close supervision; learns basic tasks.
+        lvl2: Writes simple code; follows established procedures.
+        lvl3: Writes working code with limited guidance; solves routine problems.
+        lvl4: Designs components; works independently; contributes to architecture discussions.
+        lvl5: Leads development; sets standards; mentors others.
+        lvl6: Defines technical strategy; leads large systems.
+        lvl7: Industry‑level leadership; sets organizational direction.
+        
 
 projects:
     title: Projects
@@ -51,6 +58,7 @@ projects:
         rust: Rust
         web: Web
         tools: Tools
+        embedded: Embedded
     modal:
         github: View on Github
 

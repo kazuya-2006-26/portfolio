@@ -1,36 +1,70 @@
 [
     {
         "title": {
-            "en": "My Rust Audio Player",
-            "nl": "Mijn Rust Audio Speler"
+            "en": "K-Scanner",
+            "nl": "K-Scanner"
         },
         "description": {
-            "en": "A modular Rust desktop audio player using egui and rodio.",
-            "nl": "Een modulaire Rust desktop audiospeler met egui en rodio."
+            "en": "K-Scanner is a lightweight, fast, and developer-friendly CLI tool written in Kotlin. It recursively scans a folder for `TODO` and `FIXME` comments across supported source files and outputs a clean, readable report. Perfect for keeping your codebase tidy, preparing for releases, or enforcing team standards.",
+            "nl": "K-Scanner is een lichtgewicht, snelle en ontwikkelaarsvriendelijke CLI-tool geschreven in Kotlin. Het scant recursief een map op `TODO`- en `FIXME`-opmerkingen in ondersteunde bronbestanden en genereert een overzichtelijk en leesbaar rapport. Perfect om je codebase netjes te houden, je voor te bereiden op releases of teamstandaarden af ​​te dwingen."
         },
         "tags": {
-            "en": ["Rust", "Audio", "Desktop"],
-            "nl": ["Rust", "Audio", "Desktop"]
+            "en": ["Kotlin", "Tool", "CLI"],
+            "nl": ["Kotlin", "Tool", "CLI"]
         },
-        "category": "rust",
-        "featured": true,
-        "link": "https://github.com/yourrepo"
+        "category": "tools",
+        "featured": false,
+        "link": "https://github.com/kazuya-2006-26/K-Scanner"
     },
     {
         "title": {
-            "en": "Voice Engine",
-            "nl": "Voice Engine"
+            "en": "Custom 3×3 Macro Keyboard",
+            "nl": "Custom 3×3 Macro Keyboard"
         },
         "description": {
-            "en": "A custom voice synthesis engine with formants and presets.",
-            "nl": "Een aangepaste stem synthesizer met formanten en presets."
+            "en": "A hand‑wired 3×3 macro keyboard powered by an RP2040, designed with a companion app that lets me map each key to media controls, shortcuts, app launches, and more. I started this project because the media keys on my laptop require the FN key and are awkward to use while gaming. I'm currently in the prototyping phase, learning how matrix wiring works and experimenting with firmware options in Rust, C++, or Arduino depending on final hardware support.",
+            "nl": "Een hand‑bedrade 3×3 macro‑toetsenbord op basis van een RP2040, ontworpen met een companion‑app waarmee ik elke toets kan koppelen aan mediabediening, sneltoetsen, app‑openers en meer. Ik ben dit project begonnen omdat de mediatoetsen op mijn laptop de FN‑toets vereisen en onhandig zijn tijdens het gamen. Ik zit momenteel in de prototyping‑fase, waarin ik leer hoe matrix‑bedrading werkt en experimenteer met firmware in Rust, C++ of Arduino, afhankelijk van de uiteindelijke hardware."
         },
         "tags": {
-            "en": ["Voice", "Synthesis", "Audio"],
-            "nl": ["Stem", "Synthese", "Audio"]
+            "en": ["Embedded", "Hardware", "Microcontroller", "WIP"],
+            "nl": ["Embedded", "Hardware", "Microcontroller", "WIP"]
         },
-        "category": "rust",
+        "category": "embedded",
+        "featured": true,
+        "link": ""
+    },
+    {
+        "title": {
+            "en": "Discord Bots Collection",
+            "nl": "Discord Bots Collectie"
+        },
+        "description": {
+            "en": "A collection of multiple Discord bots I've built over the years, ranging from utility and moderation tools to music playback, logging systems, and even a full economy system backed by SQL. These bots were created for servers I was part of, each designed to solve real problems such as automatic role assignment for new members, personalized welcome messages, and custom automation features. All bots are modular and built using Discord.py with various supporting libraries like FFmpeg and OS utilities. The code is private due to sensitive information woven into the projects, but I am comfortable showcasing them personally.",
+            "nl": "Een collectie van meerdere Discord‑bots die ik door de jaren heen heb gebouwd, variërend van utility‑ en moderatie‑tools tot muziekweergave, loggingsystemen en zelfs een volledig economie‑systeem met SQL. Deze bots zijn gemaakt voor servers waar ik deel van uitmaakte, elk ontworpen om echte problemen op te lossen, zoals automatische roltoewijzing voor nieuwe leden, persoonlijke welkomstberichten en aangepaste automatiseringsfuncties. Alle bots zijn modulair opgebouwd en gemaakt met Discord.py en diverse ondersteunende libraries zoals FFmpeg en OS‑tools. De code is privé vanwege gevoelige informatie in de projecten, maar ik laat ze graag persoonlijk zien."
+        },
+        "tags": {
+            "en": ["Python", "Discord.py", "Automation", "SQL", "Bots"],
+            "nl": ["Python", "Discord.py", "Automatisering", "SQL", "Bots"]
+        },
+        "category": "tools",
         "featured": false,
-        "link": "https://github.com/yourrepo"
+        "link": ""
+    },
+    {
+        "title": {
+            "en": "D&D Toolkit",
+            "nl": "D&D Toolkit"
+        },
+        "description": {
+            "en": "A modular and offline‑focused D&D desktop toolkit featuring a fast initiative tracker and an NPC generator. The project originally started in JavaFX, but I later switched to Rust with egui for better performance, native .exe builds, and a smoother development workflow. The goal is to bring the comfort of online D&D tools into a fully offline environment. The toolkit is still a WIP, but already supports movable screens, a flexible layout, and a fast, modular architecture. The code is private, as I intend to sell the finished product.",
+            "nl": "Een modulaire en offline‑gerichte D&D desktop‑toolkit met een snelle initiative tracker en een NPC‑generator. Het project begon oorspronkelijk in JavaFX, maar is later overgezet naar Rust met egui voor betere prestaties, native .exe‑builds en een soepelere ontwikkelervaring. Het doel is om het gemak van online D&D‑tools naar een volledig offline omgeving te brengen. De toolkit is nog een WIP, maar ondersteunt al verplaatsbare schermen, een flexibele lay‑out en een snelle, modulaire architectuur. De code is privé, omdat ik het uiteindelijke product wil verkopen."
+        },
+        "tags": {
+            "en": ["Rust", "egui", "JavaFX", "Desktop App", "WIP"],
+            "nl": ["Rust", "egui", "JavaFX", "Desktop App", "WIP"]
+        },
+        "category": "tools",
+        "featured": false,
+        "link": ""
     }
 ]
